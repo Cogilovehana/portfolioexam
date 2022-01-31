@@ -1,0 +1,152 @@
+/* CSS CHUNG PHẦN body*/
+body {
+    margin:0;
+
+}
+
+/* PHẦN TOP NAVIGATION BAR */
+div.topnav {
+    background-color: black;
+    text-align: end;
+    color: white;
+    padding: 2px;
+    }
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 3px;
+    text-decoration: none;
+  }
+  
+/* CSS thẻ link cho  TOPNAV */
+
+a.topnav:link {
+    color:white;
+    text-decoration: none;
+}
+a.topnav:visited {
+    color: white;
+    text-decoration: none;
+}
+a.topnav:hover {
+    color: rgba(169, 240, 224, 0.637);
+    text-decoration: none;
+}
+a.topnav:active {
+    color:white;
+    text-decoration: none;
+}
+/* TẠO 02 COLUNM CHO PHẦN MAIN */
+
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+
+    .row,
+        {
+        flex-direction: column;
+    }
+}
+
+/* Nội dung phần Main */
+
+input[type=text] {
+        width: 50%;
+        box-sizing: border-box;
+        border: 2px solid #F2F2F2;;
+        border-radius: 30px;
+        font-size: 16px;
+        background-color: #F2F2F2;;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+        background-image: url('img/searchicon.png');
+        
+  }
+  
+  input[type=text]:focus {
+    width: 50%;
+  }
+  /*PROJECT IMAGE */
+  div.flexwrapimage {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+  
+  div.flexwrapimage:hover {
+    border: 1px solid #777;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+  
+  div.flexwrapimage img {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+   /* Footer */
+   div.footer {
+    padding: 10px;
+    text-align: left;
+    background: #ddd;
+    font-size: 8px;
+}
+
+h2.aboutme 
+{
+  padding: 5%;
+
+}
+
+/*TABLE */
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
